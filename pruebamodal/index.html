@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón para abrir el modal -->
+    <button id="abrirModal">Abrir Encuesta</button>
+
+    <!-- Primer modal -->
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Por favor, completa la encuesta:</p>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="number" id="edad" placeholder="Edad">
+            <input type="text" id="lenguaje" placeholder="Lenguaje de programación">
+            <button id="confirmaEncuesta">Confirmar</button>
+        </div>
+    </div>
+
+    <!-- Segundo modal -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close2">&times;</span>
+            <p id="modal2.1"></p>
+            <p id="pregunta"></p>
+            <input type="number" id="respuesta" placeholder="Ingrese su respuesta (1 para SÍ, 2 para NO)">
+            <button id="confirmaRespuesta">Confirmar</button>
+        </div>
+    </div>
+
+    <!-- tercer modal -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close3">&times;</span>
+            <p id="modal3.1"></p>
+            <select id="opcion" name="opcion">
+                <option value="">Elije si o no</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <button id="confirmamodal3">Confirmar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
